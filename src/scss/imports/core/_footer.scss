@@ -1,0 +1,91 @@
+footer {
+  width: 100%;
+  background-color: $white-cl;
+  margin-top: 35px;
+  padding-top: 50px;
+
+  .container {
+    .mainfooter {
+      width: 100%;
+      display: flex;
+      .basic {
+        width: 50%;
+
+        h5 {
+          padding-right: 30px;
+          margin-bottom: 45px;
+        }
+        p {
+          font-family: $avo_b;
+        }
+
+        .icons {
+          margin-top: 20px;
+          margin-bottom: 62px;
+          display: flex;
+          .icon-container {
+            position: relative;
+            overflow: hidden;
+            margin-right: 23px;
+            width: 23px;
+            height: 23px;
+            img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .footer-navigation {
+        width: 50%;
+        display: flex;
+        nav {
+          display: flex;
+          a {
+            font-family: $avo;
+            margin-right: 25px;
+          }
+        }
+
+        .totop {
+          @include midflex;
+          flex-direction: column;
+          .line {
+            width: 1.5px;
+            height: 150px;
+            background-color: $black-cl;
+          }
+          span {
+            writing-mode: vertical-lr;
+            margin-top: 10px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .rights {
+    height: 45px;
+    @include midflex;
+    padding: 0 200px;
+    justify-content: space-between;
+    border-top: 2px solid #e6eaea;
+    span {
+      font-size: 14px;
+      color: #7e7e7e;
+    }
+  }
+
+  @include desktop {
+  }
+  @include tablet {
+  }
+  @include mobile {
+  }
+  @include mobile-xxs {
+  }
+}

@@ -1,0 +1,65 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #f4f7f6;
+  @include midflex;
+  justify-content: space-between;
+  z-index: 200;
+  .burger {
+    width: 120px;
+    @include midflex;
+    height: 100%;
+    cursor: pointer;
+    border-right: 1.5px solid #e0e0e0;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+
+    .icon-container {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .user-btns {
+    display: flex;
+    .btn {
+      width: 110px;
+      height: 70px;
+      @include midflex;
+      text-transform: uppercase;
+      font-size: 15px;
+
+      &.active {
+        background-color: $main;
+        color: $white-cl;
+
+        &:hover {
+          background-color: $hover;
+        }
+      }
+    }
+  }
+}

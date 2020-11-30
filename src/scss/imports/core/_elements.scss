@@ -1,0 +1,69 @@
+section {
+  padding-top: 75px;
+}
+h2 {
+  font-family: $avo_b;
+  font-size: 70px;
+  line-height: 98px;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: $avo_b;
+  font-size: 50px;
+}
+h5 {
+  font-family: $avo_b;
+  font-size: 22px;
+}
+h4 {
+  font-family: $avo;
+  font-size: 28px;
+}
+h6 {
+  font-family: $avo;
+  font-size: 22px;
+}
+
+p {
+  font-family: $avo;
+  font-size: 16px;
+}
+
+span {
+  font-family: $avo;
+}
+
+a {
+  color: $text-cl;
+  text-decoration: none;
+  display: block;
+  font-family: $avo_b;
+  cursor: pointer;
+}
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+strong {
+  font-family: bb;
+}
+
+.-lv1 {
+  @include text(100px, b, 100px, $white-cl, none);
+  font-weight: normal;
+  margin: 0;
+  a {
+    @include text(100px, g, 100px, $white-cl, none);
+  }
+  @include tablet {
+  }
+  @include mobile {
+  }
+}
+
+.button {
+}
+
+.arrow {
+}

@@ -1,0 +1,277 @@
+.banner {
+  width: 100%;
+  height: 768px;
+  // background-image: url("../../../img/banner.jpg");
+  // background-repeat: no-repeat;
+
+  .container {
+    height: 100%;
+    .content {
+      width: 100%;
+      height: 100%;
+      @include midflex;
+      flex-direction: column;
+
+      h2 {
+        color: $white-cl;
+        text-transform: uppercase;
+      }
+      h6 {
+        margin-top: 17px;
+        color: $white-cl;
+      }
+      .round-btn {
+        margin-top: 48px;
+      }
+    }
+  }
+}
+
+.intro {
+  margin: 35px auto 0;
+  width: 768px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 37px auto 0;
+    background-color: $black-cl;
+  }
+}
+
+.courses {
+  width: 100%;
+  .container {
+    .card-container {
+      width: 100%;
+      @include midflex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .card {
+        background-color: $white-cl;
+      }
+    }
+  }
+
+  &.offline {
+    background-color: $white-cl;
+  }
+}
+
+.info {
+  width: 100%;
+  background-color: $black-cl;
+  margin-top: 35px;
+  .container {
+    height: 716px;
+    @include midflex;
+
+    .title {
+      width: 50%;
+      .main-title {
+        color: $white-cl;
+        font-size: 50px;
+        span {
+          font-family: $avo_b;
+          color: $main;
+        }
+      }
+
+      &__img {
+        width: 512px;
+        height: 337px;
+        margin-top: 65px;
+        position: relative;
+        .img-container {
+          width: 100%;
+          height: 100%;
+
+          &.--bot {
+            position: absolute;
+            right: -25px;
+            bottom: -35px;
+            width: 377px;
+            height: 257px;
+          }
+        }
+      }
+    }
+
+    .info__content {
+      width: 50%;
+      &__item {
+        color: $white-cl;
+        margin-bottom: 59px;
+        p {
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+}
+
+.testimonial {
+  margin-top: 35px;
+  width: 100%;
+  height: 917px;
+  background-color: #ededed;
+
+  .container {
+    position: relative;
+    .slider {
+      @include midflex;
+      margin-top: 69px;
+      .content {
+        width: 687px;
+        height: 388px;
+        background-color: $white-cl;
+        z-index: 5;
+        padding: 60px;
+        position: relative;
+        // margin-left: 40px;
+
+        .name {
+          h5 {
+            margin-bottom: 8px;
+          }
+          span {
+            font-size: 14px;
+          }
+          margin-bottom: 18px;
+        }
+        p {
+          font-size: 22px;
+          padding-right: 40px;
+        }
+
+        .bottom {
+          width: 100%;
+          @include midflex;
+          justify-content: space-between;
+          margin-top: 100px;
+          .icon-container {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+            img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .decor-container {
+          position: absolute;
+          overflow: hidden;
+          width: 49px;
+          height: 49px;
+          right: 60px;
+          top: 60px;
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .slider-container {
+        // background-color: blue;
+        width: 379px;
+        height: 498px;
+        margin-left: -80px;
+        z-index: 1;
+      }
+    }
+
+    .control {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      @include midflex;
+      width: 100%;
+      justify-content: space-between;
+
+      &__btn {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        @include midflex;
+
+        background-color: $white-cl;
+        .icon-container {
+          width: 22px;
+          height: 22px;
+          position: relative;
+          overflow: hidden;
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .paging {
+      @include midflex;
+      margin-top: 70px;
+      .dot {
+        width: 10px;
+        height: 10px;
+        margin-right: 11px;
+        background-color: #c4c4c4;
+        border-radius: 50%;
+
+        &.active {
+          background-color: $main;
+        }
+      }
+    }
+  }
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    margin-top: 85px;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.ctaction {
+  width: 100%;
+  background-color: $main;
+  margin-top: 35px;
+  @include midflex;
+  flex-direction: column;
+
+  h5 {
+    color: $white-cl;
+  }
+
+  .round-btn {
+    background-color: $white-cl;
+    color: $main;
+    margin: 50px 0 50px;
+  }
+}
