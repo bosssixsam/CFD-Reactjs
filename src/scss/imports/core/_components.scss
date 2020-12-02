@@ -35,8 +35,10 @@
   }
 }
 
+//-- Card ---
+
 .card {
-  width: 350px;
+  width: 30%;
   margin: 0 0 20px;
   .img-container {
     width: 100%;
@@ -85,5 +87,9 @@
       @include midflex;
       border-left: 2px solid #e7e7e7;
     }
+  }
+
+  @include tablet {
+    width: 48%;
   }
 }
