@@ -7,6 +7,53 @@ header {
   @include midflex;
   justify-content: space-between;
   z-index: 200;
+
+  .background-nav {
+    z-index: 195;
+    width: 100%;
+    height: calc(100% - 70px);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+  }
+
+  .Burger-nav {
+    position: fixed;
+    width: 320px;
+    height: calc(100% - 70px);
+    top: 70px;
+    left: 0;
+    background-color: #f4f7f6;
+    z-index: 201;
+    transform: translateX(-320px);
+    transition: all 0.5s ease-in-out;
+    a {
+      padding: 20px 35px;
+      text-transform: capitalize;
+      border-top: 1px solid #cecece;
+      border-bottom: 1px solid #cecece;
+      border-collapse: collapse;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  &.open-menu {
+    // background-color: blue;
+
+    .background-nav {
+      display: block;
+    }
+
+    .Burger-nav {
+      transform: translateX(0);
+    }
+  }
+
   .burger {
     width: 120px;
     @include midflex;
@@ -51,6 +98,14 @@ header {
       @include midflex;
       text-transform: uppercase;
       font-size: 15px;
+
+      &.login {
+        background-color: #f4f7f6;
+        color: $black-cl;
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
 
       &.active {
         background-color: $main;

@@ -13,7 +13,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="img-container">
-        <img src="" alt="" />
+        <img src="./img/banner.jpg" alt="" />
       </div>
     </section>
   );

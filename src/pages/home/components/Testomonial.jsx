@@ -1,5 +1,11 @@
 import React from "react";
 
+//-- icons ---
+import doublequote from "../../../icons/double-quotes 1.svg";
+import fbicon from "../../../icons/facebook_icon.svg";
+import pre from "../../../icons/pre.svg";
+import next from "../../../icons/next.svg";
+
 const Testomonial = () => {
   return (
     <section className="testimonial">
@@ -11,7 +17,7 @@ const Testomonial = () => {
         <div className="slider">
           <div className="content">
             <div className="decor-container">
-              <img src="./img/icons/double-quotes 1.svg" alt="" />
+              <img src={doublequote} alt="" />
             </div>
 
             <div className="name">
@@ -24,7 +30,7 @@ const Testomonial = () => {
             </p>
             <div className="bottom">
               <div className="icon-container">
-                <img src="./img/icons/facebook_icon.svg" alt="" />
+                <img src={fbicon} alt="" />
               </div>
               <p>08/09/2020</p>
             </div>
@@ -38,12 +44,12 @@ const Testomonial = () => {
         <div className="control">
           <div className="control__btn pre">
             <div className="icon-container">
-              <img src="./img/icons/pre.svg" alt="" />
+              <img src={pre} alt="" />
             </div>
           </div>
           <div className="control__btn next">
             <div className="icon-container">
-              <img src="./img/icons/next.svg" alt="" />
+              <img src={next} alt="" />
             </div>
           </div>
         </div>

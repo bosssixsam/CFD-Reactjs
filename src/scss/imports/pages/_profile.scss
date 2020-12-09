@@ -1,0 +1,162 @@
+.profile {
+  width: 100%;
+  .container {
+    .head-author {
+      @include midflex;
+      flex-direction: column;
+      .img-container {
+        width: 184px;
+        height: 184px;
+        border-radius: 50%;
+      }
+
+      h5 {
+        margin-top: 21px;
+        text-transform: uppercase;
+      }
+    }
+
+    .profile__content {
+      // background-color: blue;
+      display: flex;
+      margin-top: 80px;
+      &__filter {
+        width: 30%;
+        a {
+          width: 100%;
+          height: 70px;
+          padding: 24px 28px;
+          text-transform: uppercase;
+          border: 1.5px solid #c4c4c4;
+          border-collapse: collapse;
+          &:hover {
+            background-color: #e0e0e0;
+          }
+        }
+      }
+
+      &__item {
+        width: 70%;
+
+        .form-container {
+          width: 100%;
+          padding-top: 45px;
+          background-color: $white-cl;
+          margin-left: 20px;
+          form {
+            width: 100%;
+            label {
+              display: flex;
+              padding: 0 50px;
+              align-items: center;
+              margin-bottom: 20px;
+              p {
+                width: 120px;
+              }
+              input {
+                flex: 1;
+                height: 58px;
+                border: 1px solid #c4c4c4;
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+
+            .btn {
+              font-family: $avo_b;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .myCourse-container {
+          margin-left: 20px;
+          .course-card {
+            display: flex;
+            background-color: $white-cl;
+            margin-bottom: 20px;
+
+            .img-container {
+              width: 336px;
+              height: 288px;
+            }
+
+            &__content {
+              padding: 20px 20px;
+              flex: 1;
+              h5 {
+                text-transform: uppercase;
+              }
+              p {
+                color: #838383;
+              }
+
+              .icon-info {
+                margin-top: 32px;
+                @include midflex;
+                justify-content: space-between;
+                padding-right: 40px;
+
+                &__item {
+                  display: flex;
+                  .icon-container {
+                    width: 18px;
+                    height: 18px;
+                  }
+                }
+              }
+
+              .progression-bar {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .bar {
+                  width: 330px;
+                  height: 6px;
+                  background-color: #e6eaea;
+
+                  .inner-bar {
+                    width: 80px;
+                    height: 100%;
+                    background-color: $main;
+                  }
+                }
+                span {
+                  margin-left: 15px;
+                }
+              }
+
+              .round-btn {
+                margin-top: 28px;
+                font-family: $avo;
+                color: $black-cl;
+                background: transparent;
+                border: 1.5px solid $black-cl;
+              }
+            }
+          }
+        }
+
+        .myProjects-container {
+          margin-left: 20px;
+          .card-container {
+            display: flex;
+            justify-content: space-between;
+            .card {
+              width: 48%;
+              background-color: $white-cl;
+            }
+          }
+        }
+      }
+
+      // form {
+      //   width: 100%;
+      //   height: 100%;
+      //   @include midflex;
+      //   flex-direction: column;
+      // }
+    }
+  }
+}

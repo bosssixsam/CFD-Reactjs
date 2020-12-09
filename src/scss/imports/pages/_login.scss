@@ -1,0 +1,40 @@
+.login {
+  width: 100%;
+  .container {
+    h3 {
+      text-transform: uppercase;
+      margin-top: 50px;
+      text-align: center;
+    }
+    form {
+      //   margin-top: 20px;
+      width: 80%;
+      margin: 20px auto 0;
+      padding-top: 40px;
+      background-color: $white-cl;
+      label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 0 50px;
+        p {
+          width: 150px;
+          text-transform: uppercase;
+        }
+        input {
+          flex: 1;
+          height: 50px;
+          border: 1px solid #c4c4c4;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .btn {
+        font-family: $avo_b;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
